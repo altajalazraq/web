@@ -1,14 +1,14 @@
 :root {
-  --crown-blue: #13309a;
-  --night-blue: #0a1d5c;
-  --ink: #0f1a3d;
-  --muted: #4d5876;
-  --panel: #f7f9fc;
-  --badge: #e4e9f5;
-  --line: #c9d1e4;
+  --black: #000000;
+  --ink: #000000;
+  --muted: #5e5e5e;
+  --panel: #ffffff;
+  --badge: #efefef;
+  --line: #d2d2d2;
+  --hover: #333333;
 
-  --font-en: "Archivo", system-ui, sans-serif;
-  --font-ar: "IBM Plex Sans Arabic", "Geeza Pro", system-ui, sans-serif;
+  --font-en: "Google Sans", system-ui, sans-serif;
+  --font-ar: "Google Sans", "IBM Plex Sans Arabic", "Geeza Pro", system-ui, sans-serif;
 
   --pad: clamp(24px, 4vw, 56px);
 }
@@ -65,7 +65,7 @@ p {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--crown-blue);
+  color: var(--black);
 }
 
 .mark {
@@ -119,7 +119,7 @@ p {
   align-self: flex-start;
   font-size: 0.8125rem;
   font-weight: 700;
-  color: var(--crown-blue);
+  color: var(--black);
   background: var(--badge);
   border-radius: 6px;
   padding: 5px 10px;
@@ -163,15 +163,15 @@ p {
   height: 44px;
   padding: 0 22px;
   border-radius: 8px;
-  background: var(--crown-blue);
+  background: var(--black);
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9375rem;
   text-decoration: none;
 }
 
 .button:hover {
-  background: var(--night-blue);
+  background: var(--hover);
 }
 
 .email {
@@ -189,7 +189,7 @@ p {
 .button:focus-visible,
 .email:focus-visible,
 .lang:focus-visible {
-  outline: 2px solid var(--crown-blue);
+  outline: 2px solid var(--black);
   outline-offset: 3px;
 }
 
@@ -207,9 +207,7 @@ p {
   display: grid;
   place-items: center;
   color: rgba(255, 255, 255, 0.35);
-  background:
-    radial-gradient(90% 70% at 70% 20%, #2348c4 0%, transparent 60%),
-    linear-gradient(160deg, var(--crown-blue) 0%, var(--night-blue) 100%);
+  background: var(--black);
 }
 
 .visual img {

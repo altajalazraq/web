@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const EMAIL = "hello@altajalazraq.com";
 
 // Set to an image in /public (e.g. "/hero.jpg") once the photo is ready.
-const HERO_IMAGE: string | null = null;
+const HERO_IMAGE: string | null = "/hero.jpg";
 
 type Lang = "en" | "ar";
 
@@ -20,7 +20,7 @@ const copy = {
     footer: `© ${new Date().getFullYear()} Al Taj Al Azraq. All rights reserved.`,
     switchTo: "عربي",
     switchLabel: "اعرض الصفحة بالعربية",
-    imageAlt: "",
+    imageAlt: "Curved stone facade of a modern building in black and white",
   },
   ar: {
     name: "التاج الأزرق",
@@ -32,7 +32,7 @@ const copy = {
     footer: `© ${new Date().getFullYear()} التاج الأزرق. جميع الحقوق محفوظة.`,
     switchTo: "English",
     switchLabel: "View this page in English",
-    imageAlt: "",
+    imageAlt: "واجهة حجرية منحنية لمبنى حديث بالأبيض والأسود",
   },
 } as const;
 
