@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const EMAIL = "hello@altajalazraq.com";
+const EMAIL = "info@altajazraq.com";
 
 // Set to an image in /public (e.g. "/hero.jpg") once the photo is ready.
 const HERO_IMAGE: string | null = "/hero.jpg";
@@ -36,21 +36,6 @@ const copy = {
   },
 } as const;
 
-function Crown() {
-  return (
-    <svg className="mark" viewBox="0 0 64 64" aria-hidden="true">
-      <rect width="64" height="64" rx="14" fill="currentColor" />
-      <path
-        d="M14 44 L14 22 L25 32 L32 17 L39 32 L50 22 L50 44 Z"
-        fill="none"
-        stroke="#fff"
-        strokeWidth="3.5"
-        strokeLinejoin="miter"
-      />
-    </svg>
-  );
-}
-
 export default function ComingSoon() {
   const [lang, setLang] = useState<Lang>("en");
 
@@ -76,10 +61,8 @@ export default function ComingSoon() {
     <main className="page" data-lang={lang}>
       <section className="panel">
         <header className="top">
-          <div className="brand">
-            <Crown />
-            <span className="brand__name">{t.name}</span>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className="logo" src="/logo.svg" alt="TAGCO, Al Taj Al Azraq General Contracting" width={188} height={78} />
           <button
             type="button"
             className="lang"

@@ -2,14 +2,14 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://altajalazraq.com"),
+  metadataBase: new URL("https://altajazraq.com"),
   title: "Al Taj Al Azraq | General Contracting, Riyadh",
   description:
     "Al Taj Al Azraq is a general contracting company based in Riyadh, Saudi Arabia. Our new website is on its way.",
   openGraph: {
     title: "Al Taj Al Azraq | General Contracting",
     description: "General contracting in Riyadh, Saudi Arabia. New website coming soon.",
-    url: "https://altajalazraq.com",
+    url: "https://altajazraq.com",
     siteName: "Al Taj Al Azraq",
     locale: "en_SA",
     type: "website",
